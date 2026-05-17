@@ -367,7 +367,9 @@ export default function Home() {
             <textarea aria-label="الرسالة" placeholder="الرسالة" className="contact-input min-h-32 resize-none" />
             <button className="inline-flex h-12 cursor-pointer items-center justify-center gap-2 rounded-[8px] bg-[#d8b45a] px-5 text-sm font-black text-[#071b3a] transition hover:bg-[#c69a2d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
               إرسال
-              <ArrowIcon />
+              <span className="rotate-180">
+                <ArrowIcon />
+              </span>
             </button>
           </form>
         </div>
