@@ -288,26 +288,23 @@ export default function Home() {
             {brandMarks.map((brand) => (
               <article
                 key={brand.name}
-                className="group grid min-h-64 overflow-hidden rounded-[8px] border border-[#d9c589] bg-white shadow-[0_18px_46px_rgba(7,27,58,0.08)] transition hover:-translate-y-1 hover:border-[#123e7c] hover:shadow-[0_28px_70px_rgba(7,27,58,0.14)]"
+                className="group overflow-hidden rounded-[8px] border border-[#d9c589] bg-white shadow-[0_14px_34px_rgba(7,27,58,0.06)] transition hover:-translate-y-1 hover:border-[#123e7c] hover:shadow-[0_22px_56px_rgba(7,27,58,0.11)]"
               >
-                <div className="flex min-h-52 items-center justify-center bg-[#f7f9ff] p-8">
+                <div className="flex aspect-[16/10] items-center justify-center bg-[#f7f9ff] p-8">
                   <Image
                     src={brand.image}
                     alt={`شعار ${brand.name}`}
                     width={500}
                     height={500}
                     loading="eager"
-                    className="max-h-40 w-auto object-contain transition duration-300 group-hover:scale-105"
+                    className="max-h-24 w-auto max-w-[62%] object-contain transition duration-300 group-hover:scale-[1.03]"
                   />
                 </div>
-                <div className="flex flex-col justify-center p-6">
-                  <span className="text-sm font-bold uppercase tracking-[0.12em] text-[#c69a2d]">
-                    United Brand
-                  </span>
-                  <h3 className="mt-2 text-2xl font-black text-[#071b3a]">
+                <div className="border-t border-[#e3d4a0] p-5 text-center">
+                  <h3 className="text-xl font-black text-[#071b3a]">
                     {brand.name}
                   </h3>
-                  <p className="mt-3 leading-7 text-[#4a5d7d]">{brand.category}</p>
+                  <p className="mt-2 text-sm leading-6 text-[#4a5d7d]">{brand.category}</p>
                 </div>
               </article>
             ))}
