@@ -288,24 +288,17 @@ export default function Home() {
             {brandMarks.map((brand) => (
               <article
                 key={brand.name}
-                className="group overflow-hidden rounded-[8px] border border-[#d9c589] bg-white shadow-[0_14px_34px_rgba(7,27,58,0.06)] transition hover:-translate-y-1 hover:border-[#123e7c] hover:shadow-[0_22px_56px_rgba(7,27,58,0.11)]"
+                aria-label={brand.name}
+                className="group flex aspect-[16/9] items-center justify-center rounded-[8px] border border-[#d9c589] bg-white p-8 shadow-[0_14px_34px_rgba(7,27,58,0.06)] transition hover:-translate-y-1 hover:border-[#123e7c] hover:shadow-[0_22px_56px_rgba(7,27,58,0.11)]"
               >
-                <div className="flex aspect-[16/10] items-center justify-center bg-[#f7f9ff] p-8">
-                  <Image
-                    src={brand.image}
-                    alt={`شعار ${brand.name}`}
-                    width={500}
-                    height={500}
-                    loading="eager"
-                    className="max-h-24 w-auto max-w-[62%] object-contain transition duration-300 group-hover:scale-[1.03]"
-                  />
-                </div>
-                <div className="border-t border-[#e3d4a0] p-5 text-center">
-                  <h3 className="text-xl font-black text-[#071b3a]">
-                    {brand.name}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-[#4a5d7d]">{brand.category}</p>
-                </div>
+                <Image
+                  src={brand.image}
+                  alt={`شعار ${brand.name}`}
+                  width={500}
+                  height={500}
+                  loading="eager"
+                  className="max-h-24 w-auto max-w-[58%] object-contain transition duration-300 group-hover:scale-[1.04]"
+                />
               </article>
             ))}
           </div>
