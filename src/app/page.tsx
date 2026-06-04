@@ -146,10 +146,10 @@ export default function Home() {
             className="flex items-center gap-3 rounded-[8px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c69a2d]"
           >
             <Image
-              src="https://unitedfood.sa/wp-content/uploads/2024/07/logo.png"
-              alt="United Food"
-              width={1795}
-              height={402}
+              src="/logo.png"
+              alt="يونايتد القابضة"
+              width={1868}
+              height={419}
               priority
               className="h-9 w-auto max-w-[150px] object-contain [filter:brightness(0)_saturate(100%)_invert(10%)_sepia(73%)_saturate(1847%)_hue-rotate(196deg)_brightness(89%)_contrast(101%)]"
             />
